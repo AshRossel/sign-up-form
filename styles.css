@@ -19,9 +19,22 @@ body {
 }
 
 .odin-logo-container {
-    height: 15%;
-    padding: 1em;
-    background-color: rgb(0, 0, 0, 0.4);
+    height: 13%;
+    padding: 0.5em;
+    background-color: rgb(0, 0, 0, 0.35);
     position: relative;
-    top: 20%;
+    top: 22%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.odin-logo {
+    height: 100%;
+}
+
+.logotype {
+    color: white;
+    font-family: "Norse Bold";
+    font-size: 10vh;
 }
