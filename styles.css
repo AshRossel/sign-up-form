@@ -2,3 +2,8 @@
     padding: 0;
     margin: 0;
 }
+
+@font-face {
+    font-family: "Norse Bold";
+    src: url("./fonts/Norse-Bold.otf");
+}
