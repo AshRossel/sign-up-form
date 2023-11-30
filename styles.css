@@ -7,3 +7,13 @@
     font-family: "Norse Bold";
     src: url("./fonts/Norse-Bold.otf");
 }
+
+body {
+    height: 100vh;
+}
+
+.background-image {
+    width: 37%;
+    height: inherit;
+    background: bottom/cover url("./images/background.jpg");
+}
