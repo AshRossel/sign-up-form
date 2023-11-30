@@ -17,3 +17,11 @@ body {
     height: inherit;
     background: bottom/cover url("./images/background.jpg");
 }
+
+.odin-logo-container {
+    height: 15%;
+    padding: 1em;
+    background-color: rgb(0, 0, 0, 0.4);
+    position: relative;
+    top: 20%;
+}
