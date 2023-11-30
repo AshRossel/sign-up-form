@@ -10,10 +10,12 @@
 
 body {
     height: 100vh;
+    background-color: #F9FAFB;
+    display: flex;
 }
 
 .background-image {
-    width: 37%;
+    width: 62%;
     height: inherit;
     display: flex;
     flex-direction: column;
@@ -48,5 +50,16 @@ body {
     font-family: sans-serif;
     text-align: center;
     font-size: clamp(0.86rem, 0.7vw, 2rem);
-    margin-bottom: 1em;
+    margin-bottom: 0.8em;
+}
+
+form {
+    height: 30vh;
+    background-color: white;
+    align-self: center;
+    width: 100%;
+    box-shadow: 0 5px 10px -4px rgb(163, 163, 163);
+    padding-left: 50px;
+    margin-top: 25px;
+    font-family: sans-serif;
 }
