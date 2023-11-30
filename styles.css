@@ -19,6 +19,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     background: bottom/cover url("./images/background.jpg");
+    min-width: 300px;
 }
 
 .odin-logo-container {
