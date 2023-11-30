@@ -15,6 +15,9 @@ body {
 .background-image {
     width: 37%;
     height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background: bottom/cover url("./images/background.jpg");
 }
 
@@ -35,6 +38,14 @@ body {
 
 .logotype {
     color: white;
-    font-family: "Norse Bold";
-    font-size: 10vh;
+    font-family: "Norse Bold", sans-serif;
+    font-size: 9.5vh;
+}
+
+.background-image-credits * {
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: clamp(0.86rem, 0.7vw, 2rem);
+    margin-bottom: 1em;
 }
