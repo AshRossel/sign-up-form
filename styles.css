@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 @font-face {
@@ -9,14 +10,15 @@
 }
 
 body {
-    height: 100vh;
+    min-height: 100vh;
+    min-width: 650px;
+    overflow-x: hidden;
     background-color: #F9FAFB;
     display: flex;
 }
 
 .background-image {
-    width: 62%;
-    height: inherit;
+    width: 60%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -53,13 +55,113 @@ body {
     margin-bottom: 0.8em;
 }
 
-form {
-    height: 30vh;
-    background-color: white;
+.all-form {
     align-self: center;
     width: 100%;
-    box-shadow: 0 5px 10px -4px rgb(163, 163, 163);
-    padding-left: 50px;
-    margin-top: 25px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.all-input {
+    width: 100%;
+    min-height: 300px;
+    padding-bottom: 30px;
+}
+
+h2 {
+    margin-bottom: 25px;
     font-family: sans-serif;
+}
+
+.inputs-form {
+    padding-left: 45px;
+    padding-top: 30px;
+    background-color: white;
+    padding-bottom: 40px;
+}
+
+input,
+label {
+    box-sizing: border-box;
+    appearance: none;
+    font-size: 100%;
+}
+
+label {
+    font-size: 0.75rem;
+    font-family: sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 2px;
+    opacity: 0.8;
+}
+
+input {
+    height: 30px;
+    width: 260px;
+    appearance: none;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 10px;
+}
+
+button {
+    height: 50px;
+    width: 240px;
+    margin-top: 50px;
+    margin-left: 40px;
+    background-color: #596D48;
+    border: none;
+    border-radius: 5px;
+    font-family: sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    box-shadow: 5px 7px 5px -4px rgb(163, 163, 163);
+    cursor: pointer;
+}
+
+.width-limit {
+    max-width: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+p {
+    padding-left: 45px;
+    margin-bottom: 35px;
+    font-weight: 600;
+    font-family: sans-serif;
+    color: #3E3E3F;
+}
+
+.login {
+    color: #596D48;
+}
+
+input:invalid {
+    border: none;
+    outline: 1px solid red;
+}
+
+input:focus {
+    border: none;
+    outline: 1px solid blue;
+}
+
+#error::after {
+    content: "* Passwords do not match";
+    position: absolute;
+    top: 28px;
+    left: -260px;
+    font-size: 0.8rem;
+    color: red;
+    font-family: sans-serif;
+}
+
+input[name="pwd"] + span {
+    position: relative;
 }
